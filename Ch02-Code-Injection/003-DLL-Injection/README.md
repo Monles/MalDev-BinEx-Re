@@ -58,11 +58,15 @@ x86_64-w64-mingw32-g++ -O2 hack4.c -o hack4.exe -I/usr/share/mingw-w64/include/ 
 hack4.exe <PID>
 ```
 - Check if the message box appears in the target application (mspaint.exe).
-![PID](./screenshots/01.png)
+![message](./screenshots/01.png)
 - I have added error handling in `hack4.c`, you'll be able to see any issues that occur during each step of the process, making it easier to identify what might be going wrong.
 
 ---
 
 # Discovery
-With powerful `Process Hacker`, it's clear that DLL has been injected into `mspaint.exe`.
+1. With powerful `Process Hacker`, it's clear that DLL has been injected into `mspaint.exe`.
 
+![DLL](./screenshots/03.png)
+
+2. Check the process <br>
+![Process of malicious dll](./screenshots/04.png)
