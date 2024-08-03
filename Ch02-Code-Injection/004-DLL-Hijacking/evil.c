@@ -4,6 +4,8 @@ DLL hijacking example
 author: @cocomelonc
 */
 
+// x86_64-w64-mingw32-gcc -shared -o evil.dll evil.c
+
 #include <windows.h>
 #pragma comment (lib, "user32.lib")
 
