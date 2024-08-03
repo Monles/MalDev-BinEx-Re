@@ -5,6 +5,7 @@ author: @cocomelonc
 */
 
 // x86_64-w64-mingw32-gcc -shared -o evil.dll evil.c
+// https://medium.com/@zapbroob9/dll-hijacking-basics-ea60b0f2a1d8
 
 #include <windows.h>
 #pragma comment (lib, "user32.lib")
