@@ -81,6 +81,7 @@ Then you will find you have the meterpreter shell now.
 ![meterpreter shell 03](./screenshots/10.png)
 
 It might take longer time for Windows 11, Windows 10 or 7 would be recommended for testing prupose.
+
 ![meterpreter shell 04](./screenshots/11.png)
 
 
