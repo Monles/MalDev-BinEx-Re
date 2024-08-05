@@ -4,8 +4,7 @@
 - Windows 11 VM
 - Parrot 
 
-# Common Commands
-1.
+
 # Before getting started
 You might need to generate the payload in `Kali`.
 ```bash
