@@ -23,7 +23,7 @@ While the malicious one is still active.<br>
 
 # How it works
 
-The myPayload array contains the raw bytecode of the payload, which in this example, is designed to display a message box. <br>
+The `myPayload` array contains the raw bytecode of the payload, which in this example, is designed to display a message box. <br>
 ![](./screenshots/06.png)
 
 
