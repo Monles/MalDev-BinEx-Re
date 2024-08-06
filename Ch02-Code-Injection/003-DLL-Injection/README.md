@@ -1,4 +1,4 @@
-This chapter is practiced along with this repository https://github.com/PacktPublishing/Malware-Development-for-Ethical-Hackers/blob/main/chapter02/01-traditional-injection/evil.c.
+
 
 ### Note
 I was failing to inject evil.dll for several times, there are seom methods I used for troubleshooting.
@@ -70,3 +70,9 @@ hack4.exe <PID>
 
 2. Check the process <br>
 ![Process of malicious dll](./screenshots/04.png)
+
+
+---
+
+# Reference
+- [Malware Development for Ethical Hackers](https://github.com/PacktPublishing/Malware-Development-for-Ethical-Hackers/blob/main/chapter02/01-traditional-injection/evil.c)
