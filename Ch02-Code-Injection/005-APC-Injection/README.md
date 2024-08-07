@@ -1,6 +1,11 @@
 # APC Injection
 **Asynchronous Procedure Call** (APC) Injection is a method used to inject malicious code into a running process. This technique leverages the Windows APC mechanism, which allows functions to be executed asynchronously in the context of a specific thread.
 
+# What's NtTestAlert?
+This discussion aims to demonstrate the execution of shellcode within an officially undocumented Native API known as `NtTestAlert` (Zhussupov, 2024).
+
+The `NtTestAlert` system call is an integral part of the Windows operating system's alerting mechanism. When invoked, this system function can trigger the execution of any pending `Asynchronous Procedure Calls` (APCs) associated with the thread. Before a thread begins execution at its Win32 start address, it calls `NtTestAlert` to handle any pending `APCs` (Zhussupov, 2024).
+
 # Step 1
 Compile `hack1.c`
 ```bash
@@ -41,6 +46,7 @@ The `QueueUserAPC` function is used to queue an APC to the main thread of the ta
 
 The ResumeThread function resumes the suspended thread, allowing the queued APC to execute. When the thread resumes, the APC executes the payload, in this case, displaying a message box.<br>
 ![](./screenshots/12.png)
+
 
 ---
 # References

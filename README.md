@@ -1,7 +1,7 @@
 # Tools
 - [Process Hacker](https://processhacker.sourceforge.io/)
 - Kali VM 
-- Windows 11 VM
+- Windows 11 or 10 VM
 - Parrot 
 
 
