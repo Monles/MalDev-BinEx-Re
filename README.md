@@ -41,8 +41,8 @@ gpedit.msc
 # WIN + R 
 regedit
 ```
-- Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-The setup as follows:
+Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
+### Then setup as follows:
 - DisableAntiSpyware = 1
 - DisableRoutinelyTakingAction = 1
 - ServiceStartStates = 4
