@@ -36,7 +36,7 @@ x86_64-w64-mingw32-g++ -O2 hooking.cpp -o hooking.exe -mconsole -I/usr/share/min
 ---
 
 # References
--cocomelonc (2021) https://cocomelonc.github.io/tutorial/2021/11/30/basic-hooking-1.html
+- cocomelonc (2021) https://cocomelonc.github.io/tutorial/2021/11/30/basic-hooking-1.html
 - cocomelonc (2024) [Malware-Development-for-Ethical-Hackers/chapter02/03-apc-injection
 ](https://github.com/PacktPublishing/Malware-Development-for-Ethical-Hackers/blob/main/chapter02/03-apc-injection/hack2.c). GitHub Repository.
 - Zhassulan Zhussupov (2024) Chapter 2: Exploring Various Malware Injection Attacks. [Malware Development for Ethical Hackers: Learn how to develop various types of malware to strengthen cybersecurity](https://www.packtpub.com/en-gb/product/malware-development-for-ethical-hackers-9781801810173)
