@@ -39,6 +39,7 @@ gpedit.msc
 
 - Go to `Real-time Protectio`n under the `Microsoft Defender Antivirus settings`.
 - Find Turn off `real-time protection` and set it to `Enabled`
+![](./Screenshots/03.png)
 
 ## Step 03
 ```powershell
@@ -51,6 +52,15 @@ Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
 - DisableRoutinelyTakingAction = 1
 - ServiceStartStates = 4
 
+# Run Powershell as an administrator
+```powershell
+Start-Process powershell -Verb runAs
+
+# Run the command prompt
+
+powershell -Command "Start-Process cmd -Verb RunAs"
+
+```
 
 ---
 
