@@ -1,7 +1,9 @@
 # Reverse Engineering
-
-- [CSAWCTFQualificationRound2018/](https://github.com/mohamedaymenkarmous/CTF/tree/master/CSAWCTFQualificationRound2018#a-tour-of-x86---part-1) by mohamedaymenkarmous.
-
+### References of Reverse Engineering
+- Online Book - [The Ghidra Book](https://nostarch.com/GhidraBook) By Chris Eagle, Kara Nance.
+- GitHub Repository - [CSAW CTF - Qualification Round 2018](https://github.com/mohamedaymenkarmous/CTF/tree/master/CSAWCTFQualificationRound2018#a-tour-of-x86---part-1) by mohamedaymenkarmous.
+- **Free** Online Book - [Reverse Engineering For Beginners](https://mirrors.ocf.berkeley.edu/parrot/misc/openbooks/programming/ReverseEngineeringForBeginners.en.pdf) by Dennis Yurichev.
+- Online Challenges -  [Reverse engineering challenges](https://challenges.re/) by Dennis Yurichev.
 
 ---
 
@@ -71,9 +73,7 @@ powershell -Command "Start-Process cmd -Verb RunAs"
 
 ```
 
----
-
-# References
+### References of Malware Development
 - [**Nightmare** - An amazing intro to binary exploitation / reverse engineering course](https://guyinatuxedo.github.io/index.html) by [guyinatuxedo](https://github.com/guyinatuxedo).
 - [**CTF Workshops** - About Challenges for Binary Exploitation Workshop](https://github.com/kablaa/CTF-Workshop) by [kablaa](https://github.com/kablaa).
 - [Malware-Development-for-Ethical-Hackers
