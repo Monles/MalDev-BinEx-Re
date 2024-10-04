@@ -25,6 +25,31 @@ Verify the installation. <br>
 clang --version
 ```
 
-# 2. Comparison
+# 2. Execution files
 
+### C code 
+![C hello_world.exe](./screenshots/02.png)
+
+### Rust code
 ![Rust hello_world.exe](./screenshots/01.png)
+
+# 3. Comparison
+## 3.1 Objdump
+When working with object files without access to the source code, extracting as much information as possible is essential, particularly for debugging, reverse engineering, or system analysis (Geeksforgeeks, 2024).
+
+`objdump` is primarily used to: <br>
+- Disassemble machine code to examine low-level assembly instructions generated from source code.
+- Analyse executable files to understand their structure, including sections, headers, and symbols.
+- Inspect shared libraries for their symbol information and linking behaviour.
+- Debug and reverse engineer binaries by analysing assembly code and related data. <br>
+
+
+
+
+
+
+
+
+# References
+- [objdump(1) — Linux manual page](https://man7.org/linux/man-pages/man1/objdump.1.html)
+- [GeeksforGeeks - Objdump Command in Linux with Examples](https://www.geeksforgeeks.org/objdump-command-in-linux-with-examples/)
